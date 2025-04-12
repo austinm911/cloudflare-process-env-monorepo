@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "cloudflare-process-env-monorepo",
   "private": true,
   "scripts": {
     "build": "turbo run build",
