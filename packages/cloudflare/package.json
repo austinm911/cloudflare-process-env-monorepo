@@ -1,0 +1,32 @@
+{
+  "name": "@repo/cloudflare",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "with-dotenv": "dotenv -e ../../.env -- tsx src/with-dotenv.ts",
+    "without-dotenv": "tsx src/without-dotenv.ts",
+    "lint": "eslint . --max-warnings 0",
+    "generate:component": "turbo gen react-component",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@turbo/gen": "^2.5.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
+    "eslint": "^9.24.0",
+    "typescript": "5.8.2"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20250412.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "wrangler": "^4.10.0"
+  }
+}

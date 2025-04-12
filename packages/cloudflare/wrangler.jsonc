@@ -1,0 +1,9 @@
+{
+    "$schema": "https://www.unpkg.com/wrangler@4.10.0/config-schema.json",
+    "name": "cloudflare-reproduction-process-env",
+    "main": "src/index.ts",
+    "compatibility_date": "2025-04-12",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
+}
