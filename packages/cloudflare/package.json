@@ -6,7 +6,7 @@
     "./*": "./src/*.ts"
   },
   "scripts": {
-    "dev": "wrangler dev",
+    "dev": "dotenv -e ../../.env -- wrangler dev",
     "with-dotenv": "dotenv -e ../../.env -- tsx src/with-dotenv.ts",
     "without-dotenv": "tsx src/without-dotenv.ts",
     "lint": "eslint . --max-warnings 0",
