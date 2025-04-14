@@ -6,11 +6,12 @@
     "./*": "./src/*.ts"
   },
   "scripts": {
-    "dev": "dotenv -e ../../.env -- wrangler dev",
+    "dev": "wrangler dev",
     "with-dotenv": "dotenv -e ../../.env -- tsx src/with-dotenv.ts",
     "without-dotenv": "tsx src/without-dotenv.ts",
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
+    "symlink-dev-vars": "ln -s ../../.env .dev.vars",
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
